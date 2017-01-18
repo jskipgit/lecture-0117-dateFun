@@ -31,7 +31,7 @@ public class InfoHolder {
         InfoHolder.totalNumberOfInfoObjects ++;
     }
 
-    public String coolFormat(){
+    public String getImportantDateFormatted(){
         String formatted = "unknown";
         if(getImportantDate() != null) {
             formatted = formatter.format(getImportantDate());

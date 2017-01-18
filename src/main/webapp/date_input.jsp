@@ -16,7 +16,7 @@
 <ul>
 <c:forEach items="${date_list}" var="aDate">
 
-    <li><c:out value="${aDate.coolFormat}"/></li>
+    <li><c:out value="${aDate.importantDateFormatted}"/></li>
 
 </c:forEach>
 
