@@ -1,11 +1,7 @@
 <%@ page import="com.ironyard.data.InfoHolder" %>
-<%
-InfoHolder tmp = ((InfoHolder)request.getSession().getAttribute("infoHolderTmp"));
-String result = "";
-if(tmp != null){
-    result = tmp.getName();
-}
-%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page isELIgnored="false" %>
+
 <html>
 <body>
 <h2>Hello World!</h2>
@@ -19,7 +15,7 @@ if(tmp != null){
 </form>
 
 <h2>Results</h2>
-Hello <%=result%>
+Hello <c:out value="${infoHolderTmp.name}"/>
 
 </body>
 </html>
